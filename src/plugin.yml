@@ -1,0 +1,12 @@
+main: quasky.qfactory.Main
+name: QFactory
+version: 0.01
+author: Quasky
+description: An Example plugin
+commands:
+     qf:
+         useage: /<command>
+         description: Main command alis
+     qfactory:
+         useage: /<command>
+         description: Main command

@@ -1,0 +1,47 @@
+#
+#Factorys Config
+#This is an EASY TO USE CONFIG THAT MAKES SENCE. (I'm looking at you FactoryMod)
+#I designed this to be a total replacement for factorymod and its ugly config.
+#
+#This is also placeholder text. Humm... Why do I need this again?
+#
+#MakeYourOwnFactory 2.001 is active!
+#Each factory MUST be labled as so; or everything will explode:
+#    <Name of factory>:
+#        <Creation Cost>: X
+#        <Process name>:
+#            <fuel to run>: X
+#            <input>: MATERIAL, X
+#            <output>: MATERIAL, X
+#        <Process name>:
+#            <fuel to run>: X
+#            <input>: MATERIAL, X
+#            <output>: MATERIAL, X
+#
+#Creation cost is the ammount of material to actualy MAKE the factory.
+#You can have as many processes as you want, chowever only a single input and output can be used at a time.
+#
+#
+Factorys:
+    BioFactory:
+        CreationCost: OAK_SAPLINGS, 5
+        OakSapplingsToWood:
+            fuel: coal, 64
+            input: OAK_SAPLINGS, 1
+            output: OAK_LOG, 5
+        BirchSapplingsToWood:
+            fuel: coal, 64
+            input: BIRCH_SAPLINGS, 1
+            output: DIAMOND, 5
+    OreCrusher:
+        CreationCost: IRON_BLOCK, 5
+        IronOreToIron:
+            fuel: coal, 4
+            input: IRON_ORE, 1
+            output: IRON_INGOT, 2
+    Test:
+        CreationCost: DIRT, 50
+        TestingFactory:
+            fuel: COAL, 52
+            input: SAND, 10
+            output: DIAMOND_BLOCK, 10
